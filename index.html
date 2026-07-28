@@ -389,6 +389,53 @@
             font-weight: 500;
         }
 
+        /* Hackathons Section */
+        #hackathons { background: var(--card-grey); }
+        .hackathon-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 2rem;
+        }
+        .hackathon-card {
+            background: var(--dark-grey);
+            border-radius: 15px;
+            padding: 2rem;
+            border: 1px solid var(--card-grey);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .hackathon-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--orange);
+        }
+        .hackathon-badge {
+            display: inline-block;
+            padding: 0.4rem 1.1rem;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            margin-bottom: 1.2rem;
+            color: var(--white);
+        }
+        .badge-winner { background: var(--orange); }
+        .badge-second { background: var(--forest-green); }
+        .hackathon-card h3 {
+            font-size: 1.4rem;
+            color: var(--orange);
+            margin-bottom: 0.5rem;
+        }
+        .hackathon-meta {
+            color: var(--grey-text);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            font-style: italic;
+        }
+        .hackathon-card p {
+            color: var(--grey-text);
+            margin-bottom: 1.5rem;
+        }
+        .hackathon-card p strong { color: var(--white); }
+
         /* Contact Section */
         #contact { text-align: center; }
         #contact p { max-width: 600px; margin: 0 auto 2rem; color: var(--grey-text); }
@@ -433,6 +480,7 @@
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#hackathons">Hackathons</a></li>
                 <li><a href="#contact" class="cta-nav">Contact</a></li>
             </ul>
         </div>
@@ -543,6 +591,39 @@
                         <span class="project-tag">Python</span><span class="project-tag">Pandas</span><span class="project-tag">NumPy</span><span class="project-tag">Matplotlib</span>
                     </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="hackathons" class="section">
+        <div class="section-container">
+            <h2 class="section-title">Hackathon Achievements</h2>
+            <div class="hackathon-grid">
+
+                <div class="hackathon-card">
+                    <span class="hackathon-badge badge-winner">🏆 Winner</span>
+                    <h3>VOX TOKYO: Voice AI Hackathon for Social Impact</h3>
+                    <p class="hackathon-meta">30+ teams · Organized by CreatorLabo & Tokyo Design Community</p>
+                    <p>Built <strong>Aimi</strong>, an AI voice companion for the elderly that delivers messages from family members in the user's own voice — designed to ease loneliness among Japan's aging population. Won by focusing on strong problem validation and a clear, tightly-rehearsed pitch over a polished demo.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Voice AI</span>
+                        <span class="project-tag">Social Impact</span>
+                        <span class="project-tag">Rapid Prototyping</span>
+                    </div>
+                </div>
+
+                <div class="hackathon-card">
+                    <span class="hackathon-badge badge-second">🥈 2nd Place</span>
+                    <h3>Unbound Creativity with TRAE SOLO @ Japan</h3>
+                    <p class="hackathon-meta">Global hackathon across 4 countries · Image Generation track</p>
+                    <p>Built <strong>Mazcify</strong>, a tool that turns any website URL into a custom brand mascot and cinematic intro video — helping small and medium-sized businesses build a brand identity without designers or long creative briefs.</p>
+                    <div class="project-tags">
+                        <span class="project-tag">Generative AI</span>
+                        <span class="project-tag">Branding</span>
+                        <span class="project-tag">Image Generation</span>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
