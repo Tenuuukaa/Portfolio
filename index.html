@@ -436,6 +436,27 @@
         }
         .hackathon-card p strong { color: var(--white); }
 
+        /* Gallery inside hackathon cards */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.75rem;
+            margin-top: 1rem;
+        }
+        .gallery-item {
+            overflow: hidden;
+            border-radius: 10px;
+            border: 2px solid rgba(255,255,255,0.03);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.25s ease;
+        }
+        .gallery-item img:hover { transform: scale(1.05); }
+
         /* Contact Section */
         #contact { text-align: center; }
         #contact p { max-width: 600px; margin: 0 auto 2rem; color: var(--grey-text); }
@@ -548,6 +569,28 @@
                         </ul>
                     </div>
                 </div>
+                <div class="timeline-item timeline-left">
+                    <div class="timeline-content">
+                        <div class="experience-title">Volunteer</div>
+                        <div class="experience-company">Takeoff Tokyo</div>
+                        <div class="experience-date">2026</div>
+                        <ul class="experience-achievements">
+                            <li>Supported Pitch Stage operations at one of Japan's leading startup conferences.</li>
+                            <li>Assisted founders, investors, and international attendees.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item timeline-right">
+                    <div class="timeline-content">
+                        <div class="experience-title">Volunteer</div>
+                        <div class="experience-company">SusHi Tech Tokyo</div>
+                        <div class="experience-date">2026</div>
+                        <ul class="experience-achievements">
+                            <li>Supported operations at a global startup and innovation conference.</li>
+                            <li>Assisted exhibitors and international participants.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -557,21 +600,34 @@
             <h2 class="section-title">Skills</h2>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <h3>Data Analysis</h3>
+                    <h3>Business</h3>
                     <div class="skill-list">
-                        <span class="skill-tag">Python</span><span class="skill-tag">SQL</span><span class="skill-tag">Web Scraping</span><span class="skill-tag">Pandas</span><span class="skill-tag">NumPy</span><span class="skill-tag">Matplotlib</span>
+                        <span class="skill-tag">Market/competitive research</span>
+                        <span class="skill-tag">GTM planning</span>
+                        <span class="skill-tag">Process automation</span>
+                        <span class="skill-tag">Cross-functional project management</span>
+                        <span class="skill-tag">Decision-making</span>
+                        <span class="skill-tag">Pitching</span>
+                        <span class="skill-tag">Stakeholder presentations</span>
                     </div>
                 </div>
                  <div class="skill-category">
-                    <h3>Business & Analytical</h3>
+                    <h3>Technical</h3>
                     <div class="skill-list">
-                        <span class="skill-tag">Logical Thinking</span><span class="skill-tag">Problem-Solving</span><span class="skill-tag">Adaptability</span><span class="skill-tag">Data Storytelling</span>
+                        <span class="skill-tag">Python (Pandas, NumPy, Matplotlib)</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Excel</span>
+                        <span class="skill-tag">PowerPoint</span>
+                        <span class="skill-tag">Web Scraping</span>
+                        <span class="skill-tag">Predictive Modeling</span>
                     </div>
                 </div>
                  <div class="skill-category">
                     <h3>Languages</h3>
                     <div class="skill-list">
-                        <span class="skill-tag">Mongolian</span><span class="skill-tag">English</span><span class="skill-tag">Japanese</span>
+                        <span class="skill-tag">Mongolian (Native)</span>
+                        <span class="skill-tag">English (Fluent, C1)</span>
+                        <span class="skill-tag">Japanese (Intermediate, N2 targeted Dec 2026)</span>
                     </div>
                 </div>
             </div>
@@ -610,6 +666,11 @@
                         <span class="project-tag">Social Impact</span>
                         <span class="project-tag">Rapid Prototyping</span>
                     </div>
+                    <div class="gallery-grid" aria-label="Voice AI Hackathon photos">
+                        <div class="gallery-item"><img src="IMG_2571.jpeg" alt="VOX TOKYO presentation"></div>
+                        <div class="gallery-item"><img src="IMG_2570.jpeg" alt="VOX TOKYO winners"></div>
+                        <div class="gallery-item"><img src="IMG_8460.jpeg" alt="VOX TOKYO team"></div>
+                    </div>
                 </div>
 
                 <div class="hackathon-card">
@@ -621,6 +682,11 @@
                         <span class="project-tag">Generative AI</span>
                         <span class="project-tag">Branding</span>
                         <span class="project-tag">Image Generation</span>
+                    </div>
+                    <div class="gallery-grid" aria-label="TRAE SOLO Hackathon photos">
+                        <div class="gallery-item"><img src="IMG_8474.jpeg" alt="TRAE SOLO award"></div>
+                        <div class="gallery-item"><img src="IMG_8649.JPG" alt="TRAE SOLO team selfie"></div>
+                        <div class="gallery-item"><img src="DSCF7114_Original copy.JPG" alt="TRAE SOLO group photo"></div>
                     </div>
                 </div>
 
